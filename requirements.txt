@@ -1,0 +1,205 @@
+-- ==========================================
+-- SUPPLIER DATA
+-- ==========================================
+
+INSERT INTO Suppliers
+(Supplier_Name, Phone, Email)
+VALUES
+('ABC Pharma', '9876543210', 'abc@gmail.com');
+
+INSERT INTO Suppliers
+(Supplier_Name, Phone, Email)
+VALUES
+('MediCare Suppliers', '9876501234', 'medicare@gmail.com');
+
+INSERT INTO Suppliers
+(Supplier_Name, Phone, Email)
+VALUES
+('HealthPlus Pharma', '9876512345', 'healthplus@gmail.com');
+
+
+-- ==========================================
+-- CATEGORY DATA
+-- ==========================================
+
+INSERT INTO Categories
+(Category_Name)
+VALUES
+('Antibiotic');
+
+INSERT INTO Categories
+(Category_Name)
+VALUES
+('Painkiller');
+
+INSERT INTO Categories
+(Category_Name)
+VALUES
+('Vitamin');
+
+INSERT INTO Categories
+(Category_Name)
+VALUES
+('Cough Syrup');
+
+
+-- ==========================================
+-- MEDICINE DATA
+-- ==========================================
+
+INSERT INTO Medicines
+(
+    Medicine_Name,
+    Category_ID,
+    Supplier_ID,
+    Batch_No,
+    Quantity,
+    Price,
+    Manufacture_Date,
+    Expiry_Date
+)
+VALUES
+(
+    'Amoxicillin',
+    1,
+    1,
+    'AMX001',
+    100,
+    25.50,
+    '2025-01-10',
+    '2027-01-10'
+);
+
+INSERT INTO Medicines
+(
+    Medicine_Name,
+    Category_ID,
+    Supplier_ID,
+    Batch_No,
+    Quantity,
+    Price,
+    Manufacture_Date,
+    Expiry_Date
+)
+VALUES
+(
+    'Paracetamol',
+    2,
+    2,
+    'PCM001',
+    200,
+    15.00,
+    '2025-05-20',
+    '2026-12-20'
+);
+
+INSERT INTO Medicines
+(
+    Medicine_Name,
+    Category_ID,
+    Supplier_ID,
+    Batch_No,
+    Quantity,
+    Price,
+    Manufacture_Date,
+    Expiry_Date
+)
+VALUES
+(
+    'Vitamin C',
+    3,
+    3,
+    'VIT001',
+    150,
+    40.00,
+    '2025-02-15',
+    '2027-02-15'
+);
+
+INSERT INTO Medicines
+(
+    Medicine_Name,
+    Category_ID,
+    Supplier_ID,
+    Batch_No,
+    Quantity,
+    Price,
+    Manufacture_Date,
+    Expiry_Date
+)
+VALUES
+(
+    'Cough Syrup',
+    4,
+    1,
+    'CS001',
+    80,
+    60.00,
+    '2025-03-01',
+    '2026-11-01'
+);
+
+
+-- ==========================================
+-- STOCK TRANSACTION DATA
+-- ==========================================
+
+INSERT INTO Stock_Transactions
+(
+    Medicine_ID,
+    Transaction_Type,
+    Quantity,
+    Transaction_Date
+)
+VALUES
+(
+    1,
+    'IN',
+    100,
+    '2026-10-01'
+);
+
+INSERT INTO Stock_Transactions
+(
+    Medicine_ID,
+    Transaction_Type,
+    Quantity,
+    Transaction_Date
+)
+VALUES
+(
+    2,
+    'IN',
+    200,
+    '2026-10-01'
+);
+
+INSERT INTO Stock_Transactions
+(
+    Medicine_ID,
+    Transaction_Type,
+    Quantity,
+    Transaction_Date
+)
+VALUES
+(
+    3,
+    'IN',
+    150,
+    '2026-10-01'
+);
+
+INSERT INTO Stock_Transactions
+(
+    Medicine_ID,
+    Transaction_Type,
+    Quantity,
+    Transaction_Date
+)
+VALUES
+(
+    4,
+    'IN',
+    80,
+    '2026-10-01'
+);
